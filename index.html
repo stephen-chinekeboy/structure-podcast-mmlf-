@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Structure Podcast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Episodes</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul>
+      <h1 class="logo">The Structure</h1>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">Episodes</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+      <li class="hideOnMobile"><a href="#">Contact</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-flex">
+      <div class="hero-text">
+        <button>THE PODCAST FOR PURPOSEFUL MEN</button>
+        <h1>Building Men with <strong>Purpose</strong>, Charcter and Leadesrship.</h1>
+        <p>Deep conversations, practical insights and timeless principles to help you become the man God called you to be.</p>
+      </div>
+      <div class="hero-button">
+        <div class="button">
+          <button><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h480q33 0 56.5 23.5T720-720v180l160-160v440L720-420v180q0 33-23.5 56.5T640-160H160Zm0-80h480v-480H160v480Zm0 0v-480 480Z"/></svg>Watch on Youtube</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
