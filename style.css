@@ -13,6 +13,10 @@
 nav{
   background-color: #0b0b0b;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 body {
@@ -23,7 +27,6 @@ body {
   font-size: 40px;
   color: #fff;
   margin-right: auto;
-  padding: 0 20px;
 }
 nav ul{
   width: 100%;
@@ -88,7 +91,6 @@ nav svg{
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: start;
   position: relative;
 }
@@ -138,6 +140,8 @@ nav svg{
 
 .hero-button {
   padding-top: 40px;
+  display: flex;
+  gap: 20px;
 }
 
 .hero-button button {
@@ -159,6 +163,16 @@ nav svg{
 }
 
 @media (max-width: 480px) {
+
+  .logo {
+    font-size: 35px;
+    padding-left: 20px;
+  }
+  .hero-flex {
+    padding: 0px;
+    padding-top: 40px;
+  }
+
   .hero-text {
     padding: 0 20px;
   }
@@ -172,6 +186,12 @@ nav svg{
   .hero-text p {
     font-size: 17px;
     width: 350px;
+  }
+
+  .hero-button {
+    padding-left: 20px;
+    gap: 20px;
+    flex-direction: column;
   }
 
   .hero-button button {
