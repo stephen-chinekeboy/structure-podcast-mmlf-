@@ -14,8 +14,10 @@ nav{
   background-color: #0b0b0b;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -93,6 +95,7 @@ nav svg{
   display: flex;
   justify-content: start;
   position: relative;
+  padding: 120px 0 0 0;
 }
 
 .hero-flex {
