@@ -457,6 +457,20 @@ nav svg{
   .hero-button button {
     padding: 25px 40px;
   }
+
+  .episode-flex {
+    flex-direction: column;
+  }
+
+  .episode-head .episode-line {
+    width: 20%;
+  }
+
+  .episode-button {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -467,6 +481,19 @@ nav svg{
 
   .hero-text p {
     width: 350px;
+  }
+
+    .episode-flex {
+    flex-direction: column;
+  }
+
+  .episode-head .episode-line {
+    width: 20%;
+  }
+
+  .you-button button,
+  .face-button button {
+    font-size: 20px;
   }
 }
 
