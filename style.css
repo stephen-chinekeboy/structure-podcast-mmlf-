@@ -483,6 +483,74 @@ nav svg{
   font-size: 40px;
   padding: 40px;
 }
+/* subscribe section */
+.join {
+  padding: 20px;
+}
+
+.join-flex {
+  background-color: #efb908;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.grow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.join-svg svg {
+  width: 80px;
+  height: 80px;
+  fill: black;
+}
+
+.join-text h3 {
+  font-size: 30px;
+  font-family: 'Inter'  , sans-serif;
+}
+
+.join-text p {
+  font-size: 25px;
+  color: black;
+  font-family: 'Inter' , sans-serif;
+}
+
+.join-input {
+  display: flex;
+  align-items: center;
+}
+
+.mail {
+  width: 100%;
+}
+
+.mail input {
+  padding: 24px;
+  padding-right: 60px;background-color: #b8860b;
+  border: none;
+}
+
+.mail input::placeholder {
+  font-size: 20px;
+  color: black;
+}
+
+.subscribe {
+  width: 100%;
+}
+
+.subscribe button{
+  padding: 20px;
+  font-size: 20px;
+  background-color: #D4AF37;
+  border-color: #efb908;
+}
+
 
 @media (max-width: 480px) {
   .hero {
@@ -599,6 +667,25 @@ nav svg{
   .vision-flex {
     flex-direction: column;
   }
+
+  .join-flex {
+    flex-direction: column;
+  }
+
+  .join-text h3{
+    font-size: 20px;
+  }
+
+  .join-svg svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .join-text p {
+    font-size: 15px;
+  }
+
+  
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -640,6 +727,14 @@ nav svg{
   .vision-flex {
     flex-direction: column;
   }
+
+    .join-flex {
+    flex-direction: column;
+  }
+
+  .join-text h3{
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -675,6 +770,21 @@ nav svg{
 
     .vision-flex {
     flex-direction: column;
+  }
+
+    .join-flex {
+    flex-direction: column;
+  }
+
+  .join-text h3{
+
+  }
+
+  .join-svg svg {
+  }
+
+  .join-text p {
+
   }
 }
 
