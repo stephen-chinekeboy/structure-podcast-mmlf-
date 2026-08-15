@@ -3,13 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* body{
-  min-height: 100vh;
-  background: url('laptop.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
+
 nav{
   background-color: #0b0b0b;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -22,7 +16,7 @@ nav{
 }
 
 body {
-  background-color: #161616;
+  background-color: #0b0b0b;
 }
 .logo {
   font-family: 'Cormorant Garamond' , serif;
@@ -342,6 +336,88 @@ nav svg{
   width: 30px;
   height: 30px;
 }
+/* recent section */
+.recent {
+  padding: 40px;
+}
+
+.recent-head {
+  padding-bottom: 15px;
+}
+
+.recent-head h2 {
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Cormorant Garamond' , serif;
+}
+
+.recent-line {
+  width: 6%;
+  height: 2px;
+  background-color: #D4AF37;
+  margin-top: 5px;
+}
+
+.img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* explore */
+.explore {
+  padding: 40px;
+}
+
+.explore-head {
+  padding-bottom: 20px;
+}
+
+.explore-head h1{
+  color: #fff;
+  font-family: 'Cormorant Garamond' , serif;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.explore-line {
+  margin-top: 5px;
+  width: 5%;
+  height: 2px;
+  background-color: #D4AF37;
+}
+
+.explore-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.faith,
+.lead,
+.purpose,
+.family,
+.finance,
+.mental,
+.discipline-topic {
+  text-align: center;
+  background-color: #161616;
+  border: 1px solid #D4AF37;
+  box-shadow:
+  0 8px 24px rgba(0, 0, 0, 0.5),
+  0 0 18px rgba(212, 175, 55, 0.18);
+  color: #fff;
+  padding: 40px;
+}
+
+.explore-flex h3 {
+  font-size: 25px;
+}
+
+.explore-flex svg {
+  width: 60px;
+  height: 60px;
+  fill: #D4AF37;
+}
 
 @media (max-width: 480px) {
   .hero {
@@ -442,6 +518,14 @@ nav svg{
   .face-button button{
     font-size: 20px;
   }
+
+  .recent-line {
+    width: 30%;
+  }
+
+  .explore-line {
+    width: 20%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -471,6 +555,14 @@ nav svg{
     align-items: center;
     gap: 30px;
   }
+
+  .recent-line {
+    width: 20%;
+  }
+
+  .explore-line {
+    width: 20%;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -495,12 +587,28 @@ nav svg{
   .face-button button {
     font-size: 20px;
   }
+
+  .recent-line {
+    width: 13%;
+  }
+
+  .explore-line {
+    width: 12%;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1310px) {
   .hero-text h1 {
     font-size: 70px;
     width: 600px;
+  }
+
+  .recent-line {
+    width: 9%;
+  }
+
+  .explore-line {
+    width: 8%;
   }
 }
 @media(max-width: 800px){
