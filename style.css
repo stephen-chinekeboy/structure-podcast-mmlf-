@@ -23,6 +23,7 @@ body {
   font-size: 40px;
   color: #fff;
   margin-right: auto;
+  padding: 0 30px;
 }
 nav ul{
   width: 100%;
@@ -848,6 +849,7 @@ a{
   }
 
   .quick{
+    padding-top: 40px;
     text-align: start;
   }
 
@@ -859,7 +861,6 @@ a{
     padding: 60px 0;
   }
 
-
   .podcast-text-1 h1 {
     font-size: 35px;
   }
@@ -867,6 +868,10 @@ a{
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    height: 120vh;
+  }
+
   .hero-text h1 {
     font-size: 50px;
     width: 450px;
@@ -876,8 +881,21 @@ a{
     width: 400px;
   }
 
+  .hero-button {
+    flex-direction: column;
+  }
+
   .hero-button button {
     padding: 25px 40px;
+  }
+
+  .button button a {
+    padding: 5px;
+  }
+
+  .button button svg {
+    width: 30px;
+    height: 30px;
   }
 
   .episode-flex {
@@ -927,7 +945,7 @@ a{
   }
 
   .legal {
-    text-align: center;
+    text-align: ;
     padding: 40px 0;
   }
 
@@ -935,10 +953,13 @@ a{
     padding-top: 20px;
   }
 
-  .phone,
-  .phone-flex {
-    text-align: center;
-    justify-content: center;
+  .quick {
+    text-align: start;
+    padding-top: 40px;
+  }
+
+   .links a {
+    align-items: start;
   }
 }
 
@@ -996,20 +1017,24 @@ a{
     flex-direction: column;
   }
 
+  .quick {
+    text-align: start;
+    padding-top: 40px;
+  }
+
+  .links a {
+    align-items: start;
+  }
+
   .legal {
-    text-align: center;
+    text-align:;
     padding: 40px 0;
   }
 
   .phone {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
-  .phone,
-  .phone-flex {
-    text-align: center;
-    justify-content: center;
-  }
 }
 
 @media (min-width: 1025px) and (max-width: 1310px) {
@@ -1030,8 +1055,16 @@ a{
     flex-direction: column;
   }
 
+  .quick {
+    text-align: start;
+  }
+
+  .quick a {
+    align-items: start;
+    justify-content: start;
+  }
+
   .legal {
-    text-align: center;
     padding: 40px 0;
   }
 
@@ -1039,11 +1072,6 @@ a{
     padding-top: 20px;
   }
 
-  .phone,
-  .phone-flex {
-    text-align: center;
-    justify-content: center;
-  }
 }
 @media(max-width: 800px){
   .hideOnMobile{
