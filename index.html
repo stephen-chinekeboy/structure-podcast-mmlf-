@@ -15,16 +15,16 @@
     <ul class="sidebar">
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
       <li><a href="#">Home</a></li>
-      <li><a href="#">Episodes</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#recent">EPISODES</a></li>
+      <li><a href="#vision">ABOUT</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
     <ul>
       <h1 class="logo">The Structure</h1>
-      <li class="hideOnMobile"><a href="#">Home</a></li>
-      <li class="hideOnMobile"><a href="#">Episodes</a></li>
-      <li class="hideOnMobile"><a href="#">About</a></li>
-      <li class="hideOnMobile"><a href="#">Contact</a></li>
+      <li class="hideOnMobile"><a href="#">HOME</a></li>
+      <li class="hideOnMobile"><a href="#recent">EPISODES</a></li>
+      <li class="hideOnMobile"><a href="#vision">ABOUT</a></li>
+      <li class="hideOnMobile"><a href="#contact">CONTACT</a></li>
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
   </nav>
@@ -38,17 +38,17 @@
       </div>
       <div class="hero-button">
         <div class="button">
-          <button><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h480q33 0 56.5 23.5T720-720v180l160-160v440L720-420v180q0 33-23.5 56.5T640-160H160Zm0-80h480v-480H160v480Zm0 0v-480 480Z"/></svg>Watch on Youtube</button>
+          <button>
+            <a href="https://youtube.com/@pastorgentlenwobi9973?si=rRUXcaCrB-jAd3p_" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h480q33 0 56.5 23.5T720-720v180l160-160v440L720-420v180q0 33-23.5 56.5T640-160H160Zm0-80h480v-480H160v480Zm0 0v-480 480Z"/></svg>Watch on Youtube</a>
+          </button>
         </div>
         <div class="button">
           <button class="button-2"><?xml version="1.0" encoding="utf-8"?>
-
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="-337 273 123.5 256" xml:space="preserve">
 <path d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3
 	c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H-337V396h26.5v133h49.6V396h39.3l2.9-38.3h-42.2V327.8z"/>
-</svg>Watch Facebook</button>
+          </svg>Watch on Facebook</button>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@
   </section>
 
   <main>
-    <section class="episode">
+    <!-- <section class="episode">
       <div class="episode-head">
         <h2>Latest Episode</h2>
         <div class="episode-line"></div>
@@ -133,8 +133,6 @@
             </div>
             <div class="face-button">
               <button><?xml version="1.0" encoding="utf-8"?>
-
-              <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
               <svg fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                 viewBox="-337 273 123.5 256" xml:space="preserve">
               <path d="M-260.9,327.8c0-10.3,9.2-14,19.5-14c10.3,0,21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8c-20.5,0-32.4,7.8-41.1,19.3
@@ -145,9 +143,9 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
-    <section class="recent">
+    <section class="recent" id="recent">
       <div class="recent-head">
         <h2>Recent Episodes</h2>
         <div class="recent-line"></div>
@@ -247,7 +245,7 @@
 
     </section>
 
-    <section class="vision">
+    <section class="vision" id="vision">
       <div class="vision-flex">
         <div class="vision-img">
           <img src="/img/FB_IMG_17772800503117728.jpg" alt="" loading="lazy">
@@ -289,6 +287,52 @@
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <section class="podcast">
+      <div class="podcast-flex">
+        <div class="podcast-text-1">
+          <h1>THE STRUCTURE PODCAST</h1>
+          <p>Raising a generation of Godly, Responsible and Intentional Men.</p>
+        </div>
+
+        <div class="quick">
+          <h2>Quick Links</h2>
+          <div class="links">
+            <a href="#">Home</a>
+            <a href="#recent">Episodes</a>
+            <a href="#vision">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <!-- <p id="#">Home</p>
+          <p id="#recent">Episodes</p>
+          <p id="#vision">About</p>
+          <p id="#contact">Contact</p> -->
+        </div>
+
+        <div class="legal">
+          <h2>Legal</h2>
+          <div class="legal-text">
+            <a href="/privacy.html">Privacy Policy</a>
+            <p>Terms of use</p>
+          </div>
+        </div>
+
+        <div class="phone">
+          <h2>Contact</h2>
+          <div class="phone-flex">
+            <div class="phone-svg">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+              </span>
+            </div>
+            <div id="contact" class="phone-text">
+              <p>+234 8036773734</p>
+            </div>
+          </div>
+          
+        </div>
       </div>
     </section>
   </main>

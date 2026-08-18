@@ -141,22 +141,40 @@ nav svg{
   gap: 20px;
 }
 
-.hero-button button {
-  background-color: #D4AF37;
+.button button {
+  border: 1px solid #D4AF37;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 30px 40px;
-  font-size: 25px;
-  color: black;
+  background: #D4AF37;
   border-radius: 50px;
-  border: none;
+}
+
+.button button a {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 30px 40px;;
 }
 
 .button .button-2 {
   background-color: transparent;
   border: #D4AF37 1px solid;
   color: #D4AF37;
+  display: flex;
+  align-items: center;
+  padding: 30px 40px;
+  font-size: 25px;
+  color: #D4AF37;
+  border-radius: 50px;
+}
+
+.button button svg {
+  width: 40px;
+  height: 40px;
 }
 
 .button .button-2 svg {
@@ -489,10 +507,11 @@ nav svg{
 }
 
 .join-flex {
-  background-color: #efb908;
+  border-radius: 20px;
+  background-color: #b8860b;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
   justify-content: space-between;
   padding: 10px 40px;
 }
@@ -523,17 +542,19 @@ nav svg{
 .join-input {
   display: flex;
   align-items: center;
-}
-
-.mail {
-  width: 100%;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .mail input {
-  padding: 24px;
-  padding-right: 60px;background-color: #b8860b;
-  border: none;
+  width: 500px;
+  height: 90px;
+  padding: 12px 15px;
+  border: 1px solid #efb908;
+  background: none;
+  font-size: 20px;
 }
+
 
 .mail input::placeholder {
   font-size: 20px;
@@ -541,15 +562,106 @@ nav svg{
 }
 
 .subscribe {
-  width: 100%;
+
 }
 
 .subscribe button{
-  padding: 20px;
-  font-size: 20px;
+  padding:20px 80px;
+  font-size: 25px;
   background-color: #D4AF37;
   border-color: #efb908;
 }
+
+.podcast {
+  padding: 40px;
+  color: #fff;
+}
+
+.podcast-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.podcast-text-1 h1{
+  font-size: 40px;
+  font-family: 'Cormorant Garamond' , serif;
+}
+
+.podcast-text-1 p {
+  font-size: 15px;
+  color: #d1d5db;
+  width: 250px;
+  line-height: 30px;
+  font-family: 'Inter' , sans-serif;
+}
+
+.quick {
+  text-align: center;
+  font-size: 20px;
+}
+
+.links {
+  padding-top: 10px;
+}
+
+.links a{
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.legal h2,
+.phone h2{
+  font-size: 30px;
+
+}
+
+
+.legal p,
+a{
+  padding-top: 10px;
+  font-size: 15px;
+  color: #d1d5db;
+  cursor: pointer;
+  font-family: 'Inter' , sans-serif;
+}
+
+.legal a {
+  text-decoration: none;
+}
+
+.legal-text {
+  padding-top: 20px;
+}
+
+.legal a:hover {
+  border-bottom: 2px solid #D4AF37;
+  width: 100%;
+}
+
+.phone-flex {
+  padding-top: 10px;
+  display: flex;
+  gap: 10px;
+  
+}
+
+.phone-flex svg {
+  width: 40px;
+  height: 40px;
+}
+
+.phone-flex p {
+  padding-top: 10px;
+  font-size: 15px;
+  color: #d1d5db;
+  font-family: 'Inter' , sans-serif;
+}
+
+
+
 
 
 @media (max-width: 480px) {
@@ -588,9 +700,29 @@ nav svg{
     flex-direction: column;
   }
 
+  .button button a {
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .button button svg {
+    width: 30px;
+    height: 30px;
+  }
+
   .hero-button button {
     font-size: 20px;
     padding: 15px 30px;
+  }
+
+  .button .button-2 {
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .button .button-2 svg {
+    fill: #fff;
   }
 
   .hero-button svg {
@@ -672,10 +804,12 @@ nav svg{
     flex-direction: column;
   }
 
-  .
-
-  .join-text h3{
+  .join-text h3 {
     font-size: 20px;
+  }
+
+  .join-text p {
+    padding-top: 10px;
   }
 
   .join-svg svg {
@@ -688,16 +822,38 @@ nav svg{
     gap: 10px;
   }
 
-  .subscribe {
-    text-align: center;
+  .mail input {
+    width: 100%;
+    height: 80px;
+  }
 
+  .subscribe button{
+    width: 100%;
   }
 
   .join-text p {
     font-size: 15px;
   }
 
-  
+  .podcast-flex {
+    flex-direction: column;
+  }
+
+  .legal {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .phone,
+  .phone-flex {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .podcast-text-1 h1 {
+    font-size: 35px;
+  }
+
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -746,6 +902,33 @@ nav svg{
 
   .join-text h3{
     font-size: 30px;
+  }
+
+  .join-text p {
+    padding-top: 10px;
+  }
+
+  .mail input {
+    width: 400px;
+  }
+
+   .podcast-flex {
+    flex-direction: column;
+  }
+
+  .legal {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .phone {
+    padding-top: 20px;
+  }
+
+  .phone,
+  .phone-flex {
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -798,6 +981,25 @@ nav svg{
   .join-text p {
 
   }
+
+   .podcast-flex {
+    flex-direction: column;
+  }
+
+  .legal {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .phone {
+    padding-top: 20px;
+  }
+
+  .phone,
+  .phone-flex {
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1310px) {
@@ -812,6 +1014,25 @@ nav svg{
 
   .explore-line {
     width: 8%;
+  }
+
+   .podcast-flex {
+    flex-direction: column;
+  }
+
+  .legal {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .phone {
+    padding-top: 20px;
+  }
+
+  .phone,
+  .phone-flex {
+    text-align: center;
+    justify-content: center;
   }
 }
 @media(max-width: 800px){
