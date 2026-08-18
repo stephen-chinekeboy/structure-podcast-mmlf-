@@ -31,4 +31,4 @@ const menuBtn = document.getElementById("menuBtn");
 
       alert("Thank you for subscribing!");
 
-      subscribeForm.reset();
+      subscribeForm.reset()});

@@ -800,6 +800,14 @@ a{
     flex-direction: column;
   }
 
+  .vision-text2 p {
+    font-size: 35px;
+  }
+
+  .vision-text h1 {
+    font-size: 35px;
+  }
+
   .join-flex {
     flex-direction: column;
   }
@@ -839,16 +847,18 @@ a{
     flex-direction: column;
   }
 
-  .legal {
-    text-align: center;
-    padding: 40px 0;
+  .quick{
+    text-align: start;
   }
 
-  .phone,
-  .phone-flex {
-    text-align: center;
-    justify-content: center;
+  .links a {
+    align-items: start;
   }
+
+  .legal {
+    padding: 60px 0;
+  }
+
 
   .podcast-text-1 h1 {
     font-size: 35px;
