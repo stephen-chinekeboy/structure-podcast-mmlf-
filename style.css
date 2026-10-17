@@ -155,13 +155,13 @@ nav svg{
   color: black;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   text-decoration: none;
   font-size: 25px;
   padding: 30px 40px;;
 }
 
-.button .button-2 a{
+.button .button-2 {
   background-color: none;
   border: #D4AF37 1px solid;
   color: #fff;
@@ -172,13 +172,18 @@ nav svg{
   border-radius: 50px;
 }
 
+.button .button-2 a{
+  color: #fff;
+}
+
 .button button svg {
   width: 40px;
   height: 40px;
+  fill: black;
 }
 
 .button .button-2 svg {
-  fill: #fff;
+  fill: red;
 }
 
 .hero-button svg {
