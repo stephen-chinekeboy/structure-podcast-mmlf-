@@ -501,75 +501,57 @@ nav svg{
   font-size: 40px;
   padding: 40px;
 }
-/* subscribe section */
+/* Question section */
 .join {
   padding: 20px;
 }
 
 .join-flex {
-  border-radius: 20px;
+  border-radius: 50px;
   background-color: #b8860b;
+  padding: 50px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  gap: 10px;
-  justify-content: space-between;
-  padding: 10px 40px;
 }
 
-.grow {
+.join-text h1{
+  justify-content: center;
+  width: 600px;
+  text-transform: capitalize;
+  line-height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.join-form{
+  background: #0b0b0b;
+  padding: 20px 100px;
+  border-radius: 30px;
+}
+
+.input, .text{
+  padding: 20px;
+  color: #fff;
   display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.join-svg svg {
-  width: 80px;
-  height: 80px;
-  fill: black;
-}
-
-.join-text h3 {
-  font-size: 30px;
-  font-family: 'Inter'  , sans-serif;
-}
-
-.join-text p {
-  font-size: 25px;
-  color: black;
-  font-family: 'Inter' , sans-serif;
-}
-
-.join-input {
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  gap: 20px;
-}
-
-.mail input {
-  width: 500px;
-  height: 90px;
-  padding: 12px 15px;
-  border: 1px solid #efb908;
-  background: none;
-  font-size: 20px;
-}
-
-
-.mail input::placeholder {
-  font-size: 20px;
-  color: black;
-}
-
-.subscribe {
-
-}
-
-.subscribe button{
-  padding:20px 80px;
+  gap: 10px;
   font-size: 25px;
-  background-color: #D4AF37;
-  border-color: #efb908;
+}
+
+.input input {
+  width: 300px;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+textarea {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+}
+
+.input input::placeholder {
+  font-size: 18px;
 }
 
 .podcast {
@@ -825,34 +807,18 @@ footer {
     flex-direction: column;
   }
 
-  .join-text h3 {
+  .join-text h1 {
     font-size: 20px;
-  }
-
-  .join-text p {
-    padding-top: 10px;
-  }
-
-  .join-svg svg {
-    width: 50px;
-    height: 50px;
-  }
-
-  .join-input {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .mail input {
-    width: 100%;
-    height: 80px;
-  }
-
-  .subscribe button{
-    width: 100%;
-  }
-
-  .join-text p {
+    line-height: 30px;
+    width: 300px;
+    text-align: center;
+  }.join-flex {
+    border-radius: 20px;
+  }.input input {
+    width: 300px;
+  }.input label {
+    font-size: 20px;
+  }.text textarea {
     font-size: 15px;
   }
 
@@ -865,6 +831,10 @@ footer {
     text-align: start;
   }
 
+  .links {
+    padding-top: 5px;
+  }
+
   .links a {
     align-items: start;
   }
@@ -872,6 +842,10 @@ footer {
   .legal {
     padding: 60px 0;
   }
+
+  /* .legal-text {
+    padding-top: 5px;
+  } */
 
   .podcast-text-1 h1 {
     font-size: 35px;
