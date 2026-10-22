@@ -142,7 +142,7 @@ nav svg{
   gap: 20px;
 }
 
-.button button {
+.button .button-1 {
   border: 1px solid #D4AF37;
   display: flex;
   align-items: center;
@@ -162,12 +162,11 @@ nav svg{
 }
 
 .button .button-2 {
-  background-color: none;
+  background: none;
   border: #D4AF37 1px solid;
   color: #fff;
   display: flex;
   align-items: center;
-  padding: 30px 40px;
   font-size: 25px;
   border-radius: 50px;
 }
@@ -183,7 +182,7 @@ nav svg{
 }
 
 .button .button-2 svg {
-  fill: red;
+  fill: #fff;
 }
 
 .hero-button svg {
@@ -422,7 +421,8 @@ nav svg{
 .family,
 .finance,
 .mental,
-.discipline-topic {
+.discipline-topic,
+.health {
   text-align: center;
   background-color: #161616;
   border: 1px solid #D4AF37;
@@ -529,7 +529,7 @@ nav svg{
 }
 
 .join-form{
-  background: #0b0b0b;
+  /* background: #0b0b0b; */
   padding: 20px 100px;
   border-radius: 30px;
 }
@@ -547,6 +547,7 @@ nav svg{
   width: 300px;
   padding: 20px;
   font-family: 'Courier New', Courier, monospace;
+  /* color: #fff; */
 }
 
 textarea {
